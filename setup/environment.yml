@@ -26,7 +26,7 @@ dependencies:
   - bidict>=0.22.1
   - bip-utils
   - cachetools>=5.3.1
-  - commlib-py>=0.11
+  - commlib-py==0.11.5
   - cryptography>=41.0.2
   - eth-account>=0.13.0
 #  - injective-py==1.12.*
@@ -59,8 +59,12 @@ dependencies:
   # This needs to be restricted to <2.0 - tests fail otherwise
   - urllib3>=1.26.15,<2.0
   - web3
-  - xrpl-py==4.1.0
+  - xrpl-py==4.4.0
   - yaml>=0.2.5
   - zlib>=1.2.13
   - pip:
-    - injective-py==1.12.*
+    - aptos-sdk>=0.8.0
+    - base58>=2.1.1
+    - git+https://github.com/dizpers/decibel-python-sdk.git@feat/update-tesnet-contract
+    - injective-py==1.13.*
+    - solders>=0.19.0
